@@ -1,17 +1,12 @@
 #include <iostream>
 #include <raylib.h>
 
+#include "Game.h"
+
+Game g_game;
+
 int main() {
-	InitWindow(1280, 720, "Game");
-
-	while (!WindowShouldClose()) {
-		BeginDrawing();
-		ClearBackground(BLACK);
-
-		EndDrawing();
-	}
-
-	CloseWindow();
+	g_game.run();
 
 	return 0;
 }
